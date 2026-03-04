@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Báo Bài Pro - GitHub Pages</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.31.0/build/stlite.css" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@stlite/mountable@0.31.0/build/stlite.js"></script>
+    <script>
+      stlite.mount({
+        requirements: ["pytz"], // Cài thư viện pytz
+        entrypoint: "app.py",
+        files: {
+          "app.py": `
+# DÁN TOÀN BỘ CODE PYTHON "LUXURY DARK" CỦA BẠN VÀO ĐÂY
+import streamlit as st
+from datetime import datetime
+import pytz
+
+# ... (phần còn lại của code Python) ...
+st.title("Báo Bài Pro")
+st.write("Đã chạy trên GitHub Pages!")
+          `,
+        },
+      }, document.getElementById("root"));
+    </script>
+  </body>
+</html>
